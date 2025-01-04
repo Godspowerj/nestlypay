@@ -1,0 +1,5 @@
+export const Alertfailed = () => {
+  return <>
+    
+  </>;
+};

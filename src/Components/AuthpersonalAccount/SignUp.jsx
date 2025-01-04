@@ -1,11 +1,14 @@
 import { assets } from "../../assets/img";
 import { useNavigate } from "react-router-dom";
 export const SignUp = () => {
+  const navigate = useNavigate(); // Move this line up here
 
-  const Confirmation=()=>{
-    navigate('confirmation');
+  const Confirmation = () => {
+    navigate("/confirmation");
   };
-  const navigate = useNavigate()
+   const Signin = () => {
+    navigate("/signin");
+   }
 
   return (
     <>
@@ -47,8 +50,7 @@ export const SignUp = () => {
                   className="mt-1 block w-full text-[16px] opacity-[700%] tracking-normal leading-6 px-4 py-4 
                   border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500
                    focus:border-blue-500 "
-                  // value={email}
-                  // onChange={(e) => setEmail(e.target.value)}
+
                   placeholder="Full Name"
                   required
                 />
@@ -57,18 +59,22 @@ export const SignUp = () => {
                   id="email"
                   className="mt-1 block w-full px-4 py-4  border border-gray-300 rounded-lg shadow-sm focus:outline-none
                    focus:ring-blue-500 focus:border-blue-500"
-                  // value={email}
-                  // onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter Address"
                   required
                 />
 
-                <div className="flex text-center justify-center text-white bg-[#0C46D3] text-[14px] px-4 py-4 rounded-lg hover:bg-blue-600">
-                  <button type="submit" className="">
+                <div onClick={Confirmation} className="flex text-center justify-center text-white bg-[#0C46D3] text-[14px] px-4 py-4 rounded-lg hover:bg-blue-600">
+                  <button type="submit" 
+                 >
                     Create Now
                   </button>
                 </div>
-                <p>Already Have an Account?  </p><span onClick={Confirmation} className="text-[#0C46D3] underline-offset-8 hover:underline hover:decoration-wavy">Sign In</span>
+                <p>Already Have an Account? <span onClick={Signin}
+                  className="text-[#0C46D3] underline-offset-8 hover:underline hover:decoration-wavy"
+                >
+                  Sign In
+                </span></p>
+                
               </form>
             </div>
           </div>
