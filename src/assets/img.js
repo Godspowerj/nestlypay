@@ -12,6 +12,7 @@ import icon2 from './ICON2.png'
 import successIcon from './success.png'
 import alertfailed from './ALERTFAILED.png'
 import alertsuccess from './ALERTSUCCESS.png'
+import modelimg from './model.png'
 
 
 
@@ -31,6 +32,7 @@ export const assets ={
     icon2,
     successIcon,
     alertfailed,
-    alertsuccess 
+    alertsuccess,
+    modelimg 
 
 }

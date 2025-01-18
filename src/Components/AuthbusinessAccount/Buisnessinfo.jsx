@@ -1,6 +1,16 @@
+import { useNavigate } from "react-router-dom";
 import { SidebarAuth } from "../SIdebarAuth";
 
 export const Businessinfo = () => {
+  const navigate = useNavigate();
+
+  const Signin = () => {
+    navigate("/signin");
+   }
+   const tolaststep = ()=>{
+    navigate("/laststep")
+   }
+
   return (
     <>
       <div className="flex w-full h-full">
@@ -10,7 +20,9 @@ export const Businessinfo = () => {
 
         <div className="w-full relative h-screen  bg-white/100 flex flex-col place-content-center sm:h-[calc(100vh-3rem)] ">
           <div className="flex-none sticky top-0  h-full flex-grow pt-20 pb-10 pl-5 pr-5 md:pt- md:pl-24 md:pr-24 overflow-y-scroll snap-mandatory snap-y">
-            <h2 className="md:text-[36px] text-[24px] text-[#000000] leading-10">Business Information</h2>
+            <h2 className="md:text-[36px] text-[24px] text-[#000000] leading-10">
+              Business Information
+            </h2>
             <p className="text-[16px] text-[#000000B2]">
               Provide your business name, business mail and company address.
             </p>
@@ -98,13 +110,13 @@ export const Businessinfo = () => {
                 className="mt-1 block w-full  px-4 py-4  border border-gray-300 rounded-lg shadow-sm focus:outline-none
                    focus:ring-blue-500 focus:border-blue-500"
               />
-              <div className="flex text-center justify-center text-white bg-[#0C46D3] text-[14px] px-4 py-4 rounded-lg hover:bg-blue-600">
+              <div onClick={tolaststep} className="flex text-center justify-center text-white bg-[#0C46D3] text-[14px] px-4 py-4 rounded-lg hover:bg-blue-600">
                 <button type="submit">Continue</button>
               </div>
               <p>
                 Already Have an Account?{" "}
                 <span
-                  // onClick={Signin}
+                  onClick={Signin}
                   className="text-[#0C46D3] underline-offset-8 hover:underline hover:decoration-wavy"
                 >
                   Sign In

@@ -6,25 +6,33 @@
   margin: 0;
   padding: 0;
   font-family: "MyFont";
-
-  * {
-    -webkit-font-smoothing: antialiased; /* Smooths fonts for better readability */
-    -moz-osx-font-smoothing: grayscale; /* Ensures font smoothing on Firefox on MacOS */
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-track{
-    background: rgba(238, 237, 238, 0.322);
-  }
-  ::-webkit-scrollbar-thumb{
-    background: rgb(219, 218, 218);
-    border-radius: 300px;
-  }
+  box-sizing: border-box;
+  
 }
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased; /* Smooths fonts for better readability */
+  -moz-osx-font-smoothing: grayscale; /* Ensures font smoothing on Firefox on MacOS */
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(238, 237, 238, 0.322);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(219, 218, 218);
+  border-radius: 300px;
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hidden {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+
 @font-face {
   font-family: "MyFont";
   src: url(/src/assets/Fonts/circular-std-medium-500.ttf);
