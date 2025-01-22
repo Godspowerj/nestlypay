@@ -13,7 +13,11 @@ import successIcon from './success.png'
 import alertfailed from './ALERTFAILED.png'
 import alertsuccess from './ALERTSUCCESS.png'
 import modelimg from './model.png'
-
+import notfound from './not-found.svg'
+import deleteicon from './deleteicon.png'
+import editicon from './editicon.png'
+import deleteconfirmicon from './deleteconfirm.png'
+import closeX from './closeX.png'
 
 
 
@@ -33,6 +37,11 @@ export const assets ={
     successIcon,
     alertfailed,
     alertsuccess,
-    modelimg 
+    modelimg,
+    notfound,
+    deleteicon,
+    editicon,
+    deleteconfirmicon,
+    closeX 
 
 }

@@ -35,18 +35,32 @@ const data = {
   ],
   datasets: [
     {
-      label: "Dataset 1",
-      fill: "start",
+      
+      
       data: [
         10000000, 19000000, 15000000, 24000000, 50000000, 25000000, 20000000,
       ],
       borderColor: "rgba(12, 70, 211, 1)",
-      backgroundColor: "rgba(12, 70, 211, 0.2)",
+      backgroundColor: (context) => {
+        const chart = context.chart;
+        const { ctx, chartArea } = chart;
+
+        if (!chartArea) {
+          return null;
+        }
+
+        const gradient = ctx.createLinearGradient(0, 0, chartArea.width, 0);
+        gradient.addColorStop(0, "rgba(12, 70, 211, 1)");
+        gradient.addColorStop(1, "rgba(12, 70, 211, 0.2)");
+
+        return gradient;
+      },
       tension: 0.4,
-      fill: true,
+      fill:true,
+      
     },
     {
-      label: "Dataset 2",
+      
       data: [
         10000000, 19000000, 30000000, 24000000, 35000000, 19000000, 10000000,
       ],
@@ -59,6 +73,7 @@ const data = {
 const options = {
   responsive: true,
   maintainAspectRatio: false,
+  
   plugins: {
     tooltip: {
       enabled: true,

@@ -1,6 +1,7 @@
 import { assets } from "../assets/img";
 
 export const Footer = () => {
+ 
   return (
     <>
       <div className="w-auto bg-[#0C46D3] text-white ">

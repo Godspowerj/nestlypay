@@ -10,9 +10,13 @@ import { UpdatePassword } from "./Components/AuthpersonalAccount/UpdatePassword"
 import { PersonalInfo } from "./Components/AuthbusinessAccount/PersonalInfo";
 import { Businessinfo } from "./Components/AuthbusinessAccount/Buisnessinfo";
 import { Onelaststep } from "./Components/AuthbusinessAccount/OnelastStep";
-import { Dashboard } from "./Components/Dashboard/DashboardLayout";
-import Userdashboard from "./Components/Dashboard/Userdashboard";
-import { MyModels } from "./Components/Dashboard/MyModels";
+import UserDashboardLayout from "./Dashboard.jsx/Userdashboardlayout";
+import NotFound from "./Components/Notfound";
+import Home from "./Dashboard.jsx/DashboardPages/Home";
+import Model from "./Dashboard.jsx/DashboardPages/Model";
+import Activity from "./Dashboard.jsx/DashboardPages/Activity";
+import { Invoicehistory } from "./Dashboard.jsx/DashboardPages/invoicehistory";
+import Clients from "./Dashboard.jsx/DashboardPages/Clients";
 
 export default function App() {
   return (
@@ -29,10 +33,14 @@ export default function App() {
         <Route path="personalsignup" element={<PersonalInfo />} />
         <Route path="businessinfo" element={<Businessinfo />} />
         <Route path="laststep" element={<Onelaststep />} />
-        <Route path="dashboard" element={<Dashboard />}>
-          <Route index element={<Userdashboard />} />
-          <Route path="mymodels" element={<MyModels/>}/>
+        <Route path="user" element={<UserDashboardLayout />}>
+          <Route index element={<Home />} />
+          <Route path="model" element={<Model />} />
+          <Route path="activity" element={<Activity />} />
+          <Route path="invoice" element={<Invoicehistory />} />
+          <Route path="clients" element={<Clients/>}/>
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
