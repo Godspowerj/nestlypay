@@ -103,8 +103,6 @@ const DeleteTable = () => {
         </table>
         {handleDeleteCancel && (
         <DeleteConfirmation
-        cancelButtonText = "view"
-        updateButtonText = "great"
         
           handleDeleteCancel={handleDeleteCancel}
           SethandEditClient={SethandEditClient}
