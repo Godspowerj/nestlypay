@@ -18,6 +18,8 @@ import deleteicon from './deleteicon.png'
 import editicon from './editicon.png'
 import deleteconfirmicon from './deleteconfirm.png'
 import closeX from './closeX.png'
+import upload from './backup.png'
+import productitem from './productitem.png'
 
 
 
@@ -42,6 +44,8 @@ export const assets ={
     deleteicon,
     editicon,
     deleteconfirmicon,
-    closeX 
+    closeX,
+    upload,
+    productitem 
 
 }

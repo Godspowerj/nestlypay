@@ -1,8 +1,10 @@
 import React from "react";
 import { assets } from "../assets/img";
+import { MyContext } from "../ContextFolder/ContextApi";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 const EditClient = ({
-  handleEditClientclose,
   title = "Edit Client",
   namePlaceholder = "Full Name",
   emailPlaceholder = "Email Address",
@@ -10,6 +12,7 @@ const EditClient = ({
   cancelButtonText = "Cancel",
   updateButtonText = "Update",
 }) => {
+  const { handleEditClientclose } = useContext(MyContext);
   return (
     <>
       <div className="fixed inset-0 top-0 left-0 w-full h-full flex items-center justify-center bg-black/50 backdrop-blur-sm z-[1000]">
@@ -46,12 +49,12 @@ const EditClient = ({
             >
               {cancelButtonText}
             </button>
-            <button
-              
-              className="bg-[#0C46D3] text-white rounded-xl px-7 py-3"
-            >
-              {updateButtonText}
-            </button>
+
+            <Link to="/product">
+              <button className="bg-[#0C46D3] text-white rounded-xl px-7 py-3">
+                {updateButtonText}
+              </button>
+            </Link>
           </div>
         </div>
       </div>

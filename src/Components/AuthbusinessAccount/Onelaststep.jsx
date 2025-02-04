@@ -1,6 +1,12 @@
 import { SidebarAuth } from "../SIdebarAuth";
+import { useNavigate } from "react-router-dom";
 
 export const Onelaststep = () => {
+  const navigate = useNavigate();
+
+  const toUserdashboard = () => {
+    navigate("/userdashboard");
+   }
   return (
     <>
       <div className="flex  w-full h-screen">
@@ -37,7 +43,7 @@ export const Onelaststep = () => {
               />
 
               <div className="flex w-full text-center  justify-center text-white bg-[#0C46D3]  px-4 py-4 rounded-lg hover:bg-blue-600">
-                <button className="text-[14px]" type="submit">
+                <button onClick={toUserdashboard} className="text-[14px]" type="submit">
                 Create Account
                 </button>
               </div>

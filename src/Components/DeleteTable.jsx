@@ -1,26 +1,21 @@
 import { useState } from "react";
 import { assets } from "../assets/img";
 import DeleteConfirmation from "./DeleteConfirmation";
-import EditClient from "./EditClient";
-
+// import EditClient from "./EditClient";
+import { MyContext } from "../ContextFolder/ContextApi";
+import { useContext } from "react";
 
 const DeleteTable = () => {
-  const [handleDeleteCancel, SethandleDeleteCancel] = useState(false);
-  const [handEditClient, SethandEditClient] = useState(false);
+  const {
+    handleDeleteCancel,
+    SethandleDeleteCancel,
+    handleDeleteCancelopen,
+    handleDeleteCancelclose,
+    handleEditClientopen,
+    handleEditClientclose,
+    SethandEditClient,
+  } = useContext(MyContext);
 
-  const handleDeleteCancelopen = () => {
-    SethandleDeleteCancel(true);
-  };
-  const handleDeleteCancelclose = () => {
-    SethandleDeleteCancel(false);
-  };
-
-  const handleEditClientopen = () => {
-    SethandEditClient(true);
-  };
-  const handleEditClientclose = () => {
-    SethandEditClient(false);
-  };
   const getRandomColor = () => {
     return `#${Math.floor(Math.random() * 16777215)
       .toString(16)
@@ -46,8 +41,8 @@ const DeleteTable = () => {
   ];
   return (
     <>
-      <div className="w-full overflow-x-auto ">
-        <table className=" w-full">
+      <div className="w-full overflow-x-auto scrollbar-hidden">
+        <table className=" w-full ">
           <thead className="text-left">
             <tr className="">
               <th className="py-2 px-4 w-7"></th>
@@ -67,7 +62,7 @@ const DeleteTable = () => {
           </thead>
           <tbody className="">
             {transactions.map((transaction, index) => (
-              <tr className="">
+              <tr key={index} className="p-6">
                 <td className="">
                   <p
                     style={{ backgroundColor: getRandomColor() }}
@@ -76,46 +71,26 @@ const DeleteTable = () => {
                     {transaction.clientName.charAt(0).toUpperCase()}
                   </p>
                 </td>
-                <td className="py-2 px-4 text-[16px] text-[#000000CC]">
+                <td className="py-5 px-4 text-[16px] text-[#000000CC]">
                   {transaction.clientName}
                 </td>
-                <td className="py-2 px-4 text-[16px] text-[#000000CC]">
+                <td className="py-5 px-4 text-[16px] text-[#000000CC]">
                   {transaction.email}
                 </td>
-                <td className="py-2 px-4 text-[16px] text-[#000000CC] whitespace-nowrap">
+                <td className="py-5 px-4 text-[16px] text-[#000000CC] whitespace-nowrap">
                   {transaction.phone}
                 </td>
-                <td className="py-2 px-4 text-[16px] text-[#000000CC] flex items-center gap-3">
-                  <img
-                    onClick={handleEditClientopen}
-                    src={assets.editicon}
-                    alt="great"
-                  />
-                  <img
-                    onClick={handleDeleteCancelopen}
-                    src={assets.deleteicon}
-                    alt="great"
-                  />
+                <td className="py-5 px-4 text-[16px] text-[#000000CC] flex items-center gap-3">
+                  <img onClick={handleEditClientopen} src={assets.editicon} alt="edit" />
+                  <img onClick={handleDeleteCancelopen} src={assets.deleteicon} alt="delete" />
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
-        {handleDeleteCancel && (
-        <DeleteConfirmation
-        
-          handleDeleteCancel={handleDeleteCancel}
-          SethandEditClient={SethandEditClient}
-          handleDeleteCancelclose={handleDeleteCancelclose}
-        />
-      )}
-      {handEditClient && (
-        <EditClient
-          handEditClient={handEditClient}
-          SethandleDeleteCancel={SethandleDeleteCancel}
-          handleEditClientclose={handleEditClientclose}
-        />
-      )}  
+        {handleDeleteCancel && (<DeleteConfirmation  />)}
+
+        {/* <EditClient /> */}
       </div>
     </>
   );

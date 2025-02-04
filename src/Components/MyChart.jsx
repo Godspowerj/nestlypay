@@ -54,7 +54,7 @@ const data = {
         gradient.addColorStop(1, "rgba(12, 70, 211, 0.2)");
 
         return gradient;
-      },
+      },   
       tension: 0.4,
       fill:true,
       

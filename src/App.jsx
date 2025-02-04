@@ -17,6 +17,12 @@ import Model from "./Dashboard.jsx/DashboardPages/Model";
 import Activity from "./Dashboard.jsx/DashboardPages/Activity";
 import { Invoicehistory } from "./Dashboard.jsx/DashboardPages/invoicehistory";
 import Clients from "./Dashboard.jsx/DashboardPages/Clients";
+import SubMerchant from "./Dashboard.jsx/DashboardPages/SubMerchant";
+import Catalog from "./Dashboard.jsx/DashboardPages/Catalog/Catalog";
+import Product from "./Dashboard.jsx/DashboardPages/Product";
+import Profile from "./Dashboard.jsx/DashboardPages/Profile";
+import Setting from "./Dashboard.jsx/DashboardPages/ProfileSetting/Setting";
+import CompanyOverview from "./Dashboard.jsx/DashboardPages/ProfileSetting/CompanyOverview";
 
 export default function App() {
   return (
@@ -33,12 +39,19 @@ export default function App() {
         <Route path="personalsignup" element={<PersonalInfo />} />
         <Route path="businessinfo" element={<Businessinfo />} />
         <Route path="laststep" element={<Onelaststep />} />
-        <Route path="user" element={<UserDashboardLayout />}>
+
+        <Route path="userdashboard" element={<UserDashboardLayout />}>
           <Route index element={<Home />} />
           <Route path="model" element={<Model />} />
           <Route path="activity" element={<Activity />} />
           <Route path="invoice" element={<Invoicehistory />} />
-          <Route path="clients" element={<Clients/>}/>
+          <Route path="clients" element={<Clients />} />
+          <Route path="submerchant" element={<SubMerchant />} />
+          <Route path="catalog" element={<Catalog />} />
+          <Route path="product" element={<Product />} />
+          <Route path="userprofile" element ={<Profile/>}/>
+          <Route path="setting" element={<Setting/>}></Route>
+          <Route path="overview" element={<CompanyOverview/>}/>
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>

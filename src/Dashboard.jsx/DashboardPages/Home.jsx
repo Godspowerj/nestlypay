@@ -15,7 +15,7 @@ const Home = () => {
             <p className="text-sm">Here is your business overview</p>
           </div>
 
-          <button className="bg-white/100 border-2 border-[#0C46D3] font-medium text-[#0C46D3] hover:bg-[#0C46D3] hover:text-white hover:border-white py-4 rounded-xl inline-block px-5 ">
+          <button className="bg-white/100 border-2 border-[#0C46D3] mt-7 md:mt-0 font-medium text-[#0C46D3] hover:bg-[#0C46D3] hover:text-white hover:border-white py-4 rounded-xl inline-block px-5 ">
             Create Invoice
           </button>
         </div>

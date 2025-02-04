@@ -69,20 +69,20 @@ const TableComponent = () => {
                   {transaction.clientName.charAt(0).toUpperCase()}
                 </p>
               </td>
-              <td className="py-2 px-4 text-[16px] text-[#000000CC]">
+              <td className="py-4 px-4 text-[16px] text-[#000000CC]">
                 {transaction.clientName}
               </td>
-              <td className="py-2 px-4 text-[16px] text-[#000000CC]">
+              <td className="py-4 px-4 text-[16px] text-[#000000CC]">
                 {transaction.email}
               </td>
-              <td className="py-2 px-4 text-[16px] text-[#000000CC]">
+              <td className="py-4 px-4 text-[16px] text-[#000000CC]">
                 {transaction.amount}
               </td>
-              <td className="py-2 px-4 text-[16px] text-[#000000CC]">
+              <td className="py-4 px-4 text-[16px] text-[#000000CC]">
                 {transaction.date}
               </td>
               <td
-                className={`text-center rounded-s-full py-5 text-sm ${
+                className={`text-center rounded-s-full py-6 text-sm ${
                   statusStyles[transaction.status]
                 }`}
               >
