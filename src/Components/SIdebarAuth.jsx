@@ -13,7 +13,7 @@ export const SidebarAuth = () => {
             Start taking steps to manage your business now.
           </p>
           <div className="flex items-center gap-3">
-            {/* <img src={assets.faces} alt="" /> */}
+            <img src={assets.faces} alt="" />
             <span className="text-sm text-white/100">Join 1,893 People.</span>
           </div>
         </div>
