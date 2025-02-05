@@ -9,7 +9,6 @@ import { NewUserSignUp } from "./Components/AuthpersonalAccount/NewUserSignup";
 import { UpdatePassword } from "./Components/AuthpersonalAccount/UpdatePassword";
 import { PersonalInfo } from "./Components/AuthbusinessAccount/PersonalInfo";
 import { Businessinfo } from "./Components/AuthbusinessAccount/Buisnessinfo";
-import { Onelaststep } from "./Components/AuthbusinessAccount/OnelastStep";
 import UserDashboardLayout from "./Dashboard.jsx/Userdashboardlayout";
 import NotFound from "./Components/Notfound";
 import Home from "./Dashboard.jsx/DashboardPages/Home";
@@ -23,6 +22,7 @@ import Product from "./Dashboard.jsx/DashboardPages/Product";
 import Profile from "./Dashboard.jsx/DashboardPages/Profile";
 import Setting from "./Dashboard.jsx/DashboardPages/ProfileSetting/Setting";
 import CompanyOverview from "./Dashboard.jsx/DashboardPages/ProfileSetting/CompanyOverview";
+import { Onelaststep } from "./Components/AuthbusinessAccount/Onelaststep";
 
 export default function App() {
   return (
@@ -38,7 +38,7 @@ export default function App() {
         <Route path="updatepassword" element={<UpdatePassword />} />
         <Route path="personalsignup" element={<PersonalInfo />} />
         <Route path="businessinfo" element={<Businessinfo />} />
-        <Route path="laststep" element={<Onelaststep />} />
+        <Route path="laststep" element={<Onelaststep/>} />
 
         <Route path="userdashboard" element={<UserDashboardLayout />}>
           <Route index element={<Home />} />
