@@ -14,7 +14,7 @@ import NotFound from "./Components/Notfound";
 import Home from "./Dashboard.jsx/DashboardPages/Home";
 import Model from "./Dashboard.jsx/DashboardPages/Model";
 import Activity from "./Dashboard.jsx/DashboardPages/Activity";
-import { Invoicehistory } from "./Dashboard.jsx/DashboardPages/invoicehistory";
+import { Invoicehistory } from "./Dashboard.jsx/DashboardPages/Invoicehistory";
 import Clients from "./Dashboard.jsx/DashboardPages/Clients";
 import SubMerchant from "./Dashboard.jsx/DashboardPages/SubMerchant";
 import Catalog from "./Dashboard.jsx/DashboardPages/Catalog/Catalog";
