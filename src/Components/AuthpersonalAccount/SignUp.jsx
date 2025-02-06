@@ -64,7 +64,7 @@ export const SignUp = () => {
                 />
 
                 <div onClick={Confirmation} className="flex text-center justify-center text-white bg-[#0C46D3] text-[14px] px-4 py-4 rounded-lg hover:bg-blue-600">
-                  <button type="submit" 
+                  <button disabled type="submit" 
                  >
                     Create Now
                   </button>

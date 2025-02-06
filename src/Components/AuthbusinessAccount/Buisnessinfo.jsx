@@ -111,7 +111,8 @@ export const Businessinfo = () => {
                    focus:ring-blue-500 focus:border-blue-500"
               />
               <div onClick={tolaststep} className="flex text-center justify-center text-white bg-[#0C46D3] text-[14px] px-4 py-4 rounded-lg hover:bg-blue-600">
-                <button type="submit">Continue</button>
+                <button disabled type="submit">Continue</button>
+                
               </div>
               <p>
                 Already Have an Account?{" "}
