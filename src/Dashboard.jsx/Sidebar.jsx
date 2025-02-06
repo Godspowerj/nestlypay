@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Sidebar = ({ togglesidebar }) => {
+const Sidebar = ({ togglesidebar ,handlesidebarclosing }) => {
   const navigationlink = ({ isActive }) => {
     return isActive ? "border-l-8 border-[#0C46D3] bg-[#E7EDFB]" : " ";
   };
@@ -11,7 +11,7 @@ const Sidebar = ({ togglesidebar }) => {
           className={`fixed md:sticky w-full md:w-[500px] md:top-0  left-0 h-screen bg-white z-50  overflow-auto scrollbar-hidden shadow-lg pt-10 transition-transform duration-100 ${
           togglesidebar ? "translate-y-0 " : "translate-y-[1000px] md:translate-y-0"
         }`}>
-          <nav className="mb-28">
+          <nav onClick={handlesidebarclosing} className="mb-28" >
             <ul className="flex flex-col md:space-y-4 space-y-5">
               <NavLink to="" className={navigationlink}>
                 <li className="flex items-center gap-4 text-[16px] text-[#494949] md:px-10 py-3 md:-ml-1 ml-7">
