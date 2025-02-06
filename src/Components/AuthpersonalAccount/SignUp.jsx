@@ -12,7 +12,7 @@ export const SignUp = () => {
 
   return (
     <>
-      <div className="flex w-full h-full  lg:flex ">
+      <div className="flex w-full h-full md:px-24 lg:px-0 lg:flex ">
         <div className=" w-full hidden h-[100vh] md:block bg-[#0C46D3]  text-white bg-brand-blue lg:pl-16 lg:pr-28  lg:flex flex-col justify-around">
           <div className="">
             <p className=" leading-[40px] tracking-widest font-medium text-2xl inline-flex items-center gap-4 text-white/100 mt-8">

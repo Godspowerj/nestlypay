@@ -15,7 +15,7 @@ export const MasterAuth = () => {
     <>
       {" "}
       {/* the top */}
-      <div className="flex w-full h-full  lg:flex justify-center">
+      <div className="flex w-full h-full md:px-24 lg:flex justify-center">
         <SidebarAuth />
         {/* the buttom */}
         <div className="lg:px-16 bg-white/100 flex flex-col place-content-center overflow-hidden h-[calc(100vh-6.5rem)] px-5 sm:h-[calc(100vh-3rem)] lg:h-screen">

@@ -20,7 +20,7 @@ const Home = () => {
           </button>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8  grid-cols-1 ">
+        <div className="grid lg:grid-cols-3 gap-8 md:grid-cols-1 grid-cols-1 ">
           <div className=" bg-[#0C46D3]  text-white/100 rounded-xl px-8 py-10 flex flex-col place-content-center">
             <p>Completed Payments</p>
             <h1>₦131,900,092.00</h1>

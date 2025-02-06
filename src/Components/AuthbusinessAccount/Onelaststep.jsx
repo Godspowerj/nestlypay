@@ -6,15 +6,15 @@ export const Onelaststep = () => {
 
   const toUserdashboard = () => {
     navigate("/userdashboard");
-   }
+  };
   return (
     <>
-      <div className="flex  w-full h-screen">
-        <div className="w-full hidden md:block">
+      <div className="flex  w-full h-screen md:px-24 lg:px-0 ">
+        <div className="w-full hidden md:hidden lg:block">
           <SidebarAuth />
         </div>
-        <div className="w-full place-content-center h-[calc(100vh-3.5rem)]  px-4">
-        <h2 className="text-[#0C46D3] text-2xl lg:hidden absolute top-0 pt-7">
+        <div className="w-full place-content-center">
+          <h2 className="text-[#0C46D3] text-2xl lg:hidden absolute top-0 pt-7">
             NESTLY PAY
           </h2>
           <div className="w-full space-y-2 ">
@@ -42,9 +42,12 @@ export const Onelaststep = () => {
                 required
               />
 
-              <div onClick={toUserdashboard}  className="flex w-full text-center  justify-center text-white bg-[#0C46D3]  px-4 py-4 rounded-lg hover:bg-blue-600">
+              <div
+                onClick={toUserdashboard}
+                className="flex w-full text-center  justify-center text-white bg-[#0C46D3]  px-4 py-4 rounded-lg hover:bg-blue-600"
+              >
                 <button className="text-[14px]" type="submit">
-                Create Account
+                  Create Account
                 </button>
               </div>
             </form>

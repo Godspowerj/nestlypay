@@ -31,9 +31,9 @@ const Navbar = ({ togglesidebar, Settogglesidebar }) => {
             </div>
           </div>
 
-          <div className="hidden w-[600px] md:block">
+          <div className="hidden w-[600px] lg:block md:hidden">
             <div
-              className="md:flex grid-flow-col grid-row-2  h-full  py-4 px-4 ml-32 border border-gray-300 rounded-lg  focus:outline-none
+              className="lg:flex grid-flow-col grid-row-2  h-full  py-4 px-4 ml-32 border border-gray-300 rounded-lg  focus:outline-none
              focus:ring-blue-500 focus:border-blue-500"
             >
               <input
@@ -50,7 +50,7 @@ const Navbar = ({ togglesidebar, Settogglesidebar }) => {
         </div>
 
         <div className="flex items-center gap-6 ">
-          <p className="text-[#E1981B] hidden md:block bg-[#E1981B1A] text-sm p-1 rounded-lg">
+          <p className="text-[#E1981B] hidden lg:block md:hidden bg-[#E1981B1A] text-sm p-1 rounded-lg">
             Request pending
           </p>
           <img

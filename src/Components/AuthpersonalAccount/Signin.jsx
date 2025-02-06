@@ -12,12 +12,12 @@ export const Signin = () => {
   };  
   return (
     <>
-      <div className="w-full flex"> 
-        <div className="w-full hidden lg:block">
+      <div className="w-full flex md:px-24 lg:px-0"> 
+        <div className="w-full hidden md:hidden lg:block">
           <SidebarAuth />
         </div>
 
-        <div className="w-full  lg:mx-4  bg-white/100 flex flex-col md:place-content-center  lg:h-screen">
+        <div className="w-full  lg:mx-4  bg-white/100 flex flex-col lg:place-content-center  lg:h-screen">
           <p className="lg:hidden leading-[40px] tracking-widest font-medium text-2xl inline-flex items-center gap-4 text-[#0C46D3] pl-4 mt-8">
             NESTLY PAY
           </p>

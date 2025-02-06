@@ -9,8 +9,8 @@ export const PersonalInfo = () => {
   };
   return (
     <>
-      <div className="flex w-full h-">
-        <div className="w-full hidden md:block ">
+      <div className="flex w-full md:px-24 lg:px-0">
+        <div className="w-full hidden lg:block md:hidden ">
           <SidebarAuth />
         </div>
         <div className="w-full flex flex-col place-content-center  px-5  h-screen">

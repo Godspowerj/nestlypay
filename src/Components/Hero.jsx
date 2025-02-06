@@ -6,7 +6,7 @@ import { Imageslider } from "./Imageslider";
 export const Hero = () => {
   return (
     <>
-      <div className="flex flex-col w-full align-center md:h-auto  bg-[#0C46D3]   relative justify-center min-h-96 pb-12 text-white ">
+      <div className="flex flex-col w-full align-center lg:h-auto  bg-[#0C46D3] relative justify-center min-h-96 md:min-h-[500px] pb-12 text-white ">
         <div className="flex text-center  flex-col lg:pt-20 lg:pb-96 ">
           <p
             className=" tracking-normal text-3xl/10 lg:w-[60%] lg:mx-auto font-medium text-white lg:text-5xl/snug  px-6 
@@ -28,7 +28,7 @@ export const Hero = () => {
         </div>
       </div>
       <div className=" px- lg:max-w-7xl  lg:flex lg:items-center lg:justify-between lg:text-center lg:mx-auto lg:flex-col">
-        <div className="px-5 mt-[-90px] relative lg:mt-[-400px] lg:mb-0 lg:max-w-7xl lg:flex lg:items-center lg:justify-between lg:mx-auto lg:flex-col">
+        <div className="px-5 mt-[-90px] relative lg:mt-[-400px] md:mt-[-170px] lg:mb-0 lg:max-w-7xl lg:flex lg:items-center lg:justify-between lg:mx-auto lg:flex-col">
           <img
             className="lg:max-w-6xl lg:pl-13 lg:pr-13 "
             src={assets.landing_img}
