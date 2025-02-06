@@ -13,7 +13,7 @@ export const Onelaststep = () => {
         <div className="w-full hidden md:hidden lg:block">
           <SidebarAuth />
         </div>
-        <div className="w-full place-content-center">
+        <div className="w-full flex flex-col justify-center">
           <h2 className="text-[#0C46D3] text-2xl lg:hidden absolute top-0 pt-7">
             NESTLY PAY
           </h2>
