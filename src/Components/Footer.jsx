@@ -26,7 +26,7 @@ export const Footer = () => {
               alt=""
             />
             <img
-              className="max-w-64 md:max-w-[54rem] relative md:right-8 right-5 pt-5"
+              className="max-w-64 lg:max-w-[54rem] md:max-w-[37rem] relative md:right-8 right-5 pt-5"
               src={assets.desktop}
               alt=""
             />

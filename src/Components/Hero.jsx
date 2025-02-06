@@ -14,7 +14,7 @@ export const Hero = () => {
           >
             Connecting Businesses for Simplified Payments.
           </p>
-          <span className="text-lg px-12 lg:w-[40%] lg:mx-auto">
+          <span className="text-lg px-12 lg:w-[40%] md:w-[70%] md:mx-auto lg:mx-auto">
             Create and send invoices, manage your finance, track sales, and get
             paid faster.
           </span>

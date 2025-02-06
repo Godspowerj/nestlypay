@@ -3,7 +3,7 @@ import { assets } from "../assets/img";
 export const SidebarAuth = () => {
   return(
   <>
-    <div className="hidden h-[100vh] md:block bg-[#0C46D3]  text-white bg-brand-blue lg:pl-24 lg:pr-28  lg:flex flex-col justify-around">
+    <div className="hidden md:hidden h-[100vh] md:justify-center md:mx-10 bg-[#0C46D3]  text-white bg-brand-blue lg:pl-24 lg:pr-28 lg:flex flex-col justify-around">
       <div>
         <p className="  leading-[40px] tracking-widest font-medium text-2xl inline-flex items-center gap-4 text-white/100 mt-8">
           NESTLY PAY

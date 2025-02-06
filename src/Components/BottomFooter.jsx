@@ -6,7 +6,7 @@ export const BottomFooter = () => {
   };
   return (
     <>
-      <div className="flex flex-col md:flex-row  md:justify-between  md:gap-
+      <div className="flex flex-col md:flex-row items-center  md:justify-between  md:gap-
        align-center text-center pt-8 pb-8 md:pl-14 md:pr-8 md:max-w-6xl md:flex md:m-auto md:align-center ">
         <div className="flex gap-5 align-center justify-center">
           <img  onClick={scrollToTop} src={assets.facebook} alt="" />
