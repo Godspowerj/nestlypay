@@ -42,8 +42,8 @@ export const Onelaststep = () => {
                 required
               />
 
-              <div className="flex w-full text-center  justify-center text-white bg-[#0C46D3]  px-4 py-4 rounded-lg hover:bg-blue-600">
-                <button onClick={toUserdashboard} className="text-[14px]" type="submit">
+              <div onClick={toUserdashboard}  className="flex w-full text-center  justify-center text-white bg-[#0C46D3]  px-4 py-4 rounded-lg hover:bg-blue-600">
+                <button className="text-[14px]" type="submit">
                 Create Account
                 </button>
               </div>

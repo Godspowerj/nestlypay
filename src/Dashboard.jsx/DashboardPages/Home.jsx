@@ -6,7 +6,7 @@ import TableComponent from "../../Components/Tablecomponent";
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col flex-wrap space-y-9 pb-20">
+      <div className="flex flex-col space-y-9 pb-20">
         <div className="md:flex block justify-between ">
           <div>
             <h1 className="text-2xl w-80 md:w-full ">
@@ -20,7 +20,7 @@ const Home = () => {
           </button>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-9  grid-cols-1 ">
+        <div className="grid md:grid-cols-3 gap-8  grid-cols-1 ">
           <div className=" bg-[#0C46D3]  text-white/100 rounded-xl px-8 py-10 flex flex-col place-content-center">
             <p>Completed Payments</p>
             <h1>₦131,900,092.00</h1>
