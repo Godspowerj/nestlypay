@@ -4,7 +4,7 @@ export const Navigation = () => {
   return (
     <>
       <div className=" text-white w-full bg-[#0C46D3] text-center">
-        <div className="max-w-7xl lg:max-w-6xl md:max-w-3xl  flex items-center justify-between text-center mx-auto p-4">
+        <div className="max-w-7xl lg:max-w-6xl   flex items-center justify-between text-center mx-auto p-4">
           <img src="/LOGO.png" alt="" />
           
 
