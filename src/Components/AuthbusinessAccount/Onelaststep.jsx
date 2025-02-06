@@ -9,7 +9,7 @@ export const Onelaststep = () => {
   };
   return (
     <>
-      <div className="flex  w-full h-screen md:px-24 lg:px-0 ">
+      <div className="flex  w-full h-screen px-4 md:px-24 lg:px-0 ">
         <div className="w-full hidden md:hidden lg:block">
           <SidebarAuth />
         </div>
