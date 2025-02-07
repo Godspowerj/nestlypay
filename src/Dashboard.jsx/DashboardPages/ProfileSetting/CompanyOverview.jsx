@@ -3,9 +3,9 @@ import { assets } from "../../../assets/img";
 const CompanyOverview = () => {
   return (
     <>
-      <div className=" pb-20 flex justify-center gap-10 ">
+      <div className="md:flex lg:flex pb-20 block justify-center  space-y-5 gap-10 ">
         {/* buisness Information */}
-        <div className="space-y-3 w-[400px] bg-white p-5 rounded-lg shadow-lg">
+        <div className="space-y-3 md:w-[400px] lg:w-[400px] bg-white p-5 rounded-lg shadow-lg">
           <h2 className="text-2xl">Business Information</h2>
           <p className="text-[#000000B2] text-sm">
             Provide your business name, business mail and company website.

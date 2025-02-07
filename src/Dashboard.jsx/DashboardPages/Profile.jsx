@@ -12,7 +12,7 @@ const Profile = () => {
             alt="jj"
           />
           <div className="flex gap-4 text-sm">
-            <button className="text-white bg-[#0C46D3] px-4 py-3 md:w-[130px] w-[120px] rounded-lg ">
+            <button className="text-white bg-[#0C46D3] px-4 py-3 md:w-[130px] w-[120px] whitespace-nowrap rounded-lg ">
               Upload Image
             </button>
             <button className="px-4 py-3 text-[#979797] border-[1px] md:w-[130px] w-[120px] rounded-lg border-[#979797]">
