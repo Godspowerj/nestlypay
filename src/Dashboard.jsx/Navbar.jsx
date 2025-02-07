@@ -15,7 +15,7 @@ const Navbar = ({ togglesidebar, Settogglesidebar }) => {
           onClick={() =>Settogglesidebar(!togglesidebar)}
           
           className="lg:hidden block"
-          src="./menu.png"
+          src="/menu.png"
           alt=""
         />
         <div className="flex ">
