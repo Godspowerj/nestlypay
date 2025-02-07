@@ -15,7 +15,7 @@ const Sidebar = ({ togglesidebar ,handlesidebarclosing }) => {
             <ul className="flex flex-col md:space-y-4 space-y-5">
               <NavLink to="" className={navigationlink}>
                 <li className="flex items-center gap-4 text-[16px] text-[#494949] md:px-10 py-3 md:-ml-1 ml-7">
-                  <img src="./home.png" />
+                  <img src="/home.png" />
                   Home
                 </li>
               </NavLink>
@@ -24,13 +24,13 @@ const Sidebar = ({ togglesidebar ,handlesidebarclosing }) => {
               </p>
               <NavLink to="model" className={navigationlink}>
                 <li className="flex items-center gap-4 text-[16px] text-[#494949] md:px-10 py-3 md:-ml-1 ml-7">
-                  <img src="./models.png" />
+                  <img src="/models.png" />
                   My Models
                 </li>
               </NavLink>
               <NavLink to="activity" className={navigationlink}>
                 <li className="flex items-center gap-4 text-[16px] text-[#494949] md:px-10 py-3 md:-ml-1 ml-7">
-                  <img src="./activity.png" />
+                  <img src="/activity.png" />
                   My Activities
                 </li>
               </NavLink>
@@ -39,13 +39,13 @@ const Sidebar = ({ togglesidebar ,handlesidebarclosing }) => {
               </p>
               <NavLink to="invoice" className={navigationlink}>
                 <li className="flex items-center gap-4 text-[16px] text-[#494949] md:px-10 py-3 md:-ml-1 ml-7">
-                  <img src="./invoice.png" />
+                  <img src="/invoice.png" />
                   Invoice History
                 </li>
               </NavLink>
               <NavLink to="clients" className={navigationlink}>
                 <li className="flex items-center gap-4 text-[16px] text-[#494949] md:px-10 py-3 md:-ml-1 ml-7">
-                  <img src="./clients.png" />
+                  <img src="/clients.png" />
                   Clients
                 </li>
               </NavLink>
@@ -54,19 +54,19 @@ const Sidebar = ({ togglesidebar ,handlesidebarclosing }) => {
               </p>
               <NavLink to="submerchant" className={navigationlink}>
                 <li className="flex items-center gap-4 text-[16px] text-[#494949] md:px-10 py-3 md:-ml-1 ml-7">
-                  <img src="./sub merchant.png" />
+                  <img src="/sub merchant.png" />
                   Sub Merchant
                 </li>
               </NavLink>
               <NavLink to="catalog" className={navigationlink}>
                 <li className="flex items-center text-[#494949] gap-4 text-[16px] md:px-10 py-3 md:-ml-1 ml-7">
-                  <img src="./catalog.png" />
+                  <img src="/catalog.png" />
                   Catalog
                 </li>
               </NavLink>
               <NavLink to="*" className={navigationlink}>
                 <li className="flex items-center text-[#494949] gap-4 text-[16px] md:px-10 py-3 md:-ml-1 ml-7">
-                  <img src="./draft.png" />
+                  <img src="/draft.png" />
                   Draft
                 </li>
               </NavLink>

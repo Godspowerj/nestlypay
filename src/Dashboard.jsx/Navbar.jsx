@@ -55,13 +55,13 @@ const Navbar = ({ togglesidebar, Settogglesidebar }) => {
           </p>
           <img
             onClick={() => Setnotification(!notification)}
-            src="./notification.png"
+            src="/notification.png"
             alt=""
           />
           <img
             onClick={() => Setusernotification(!usernotification)}
             className="size-14 rounded-full"
-            src="./profile.jpg"
+            src="/profile.jpg"
             alt=""
           />
         </div>
@@ -75,19 +75,19 @@ const Navbar = ({ togglesidebar, Settogglesidebar }) => {
         <ul className="space-y-3 text-left w-[200px] py-3 flex flex-col ">
           <NavLink to="userprofile" className={navigationlink}>
             <li className="flex items-center ml-4 p-2 gap-4">
-              <img src="./userCircle.png" alt="profile" />
+              <img src="/userCircle.png" alt="profile" />
               Profile
             </li>
           </NavLink>
           <NavLink to="setting" className={navigationlink}>
             <li className="flex items-center ml-4 p-2 gap-4">
-              <img src="./userSetting.png" alt="setting" />
+              <img src="/userSetting.png" alt="setting" />
               Settings
             </li>
           </NavLink>
           <NavLink to="" className={navigationlink}>
             <li className="flex items-center ml-4 p-2 gap-4">
-              <img src="./userCheck.png" alt="notification" />
+              <img src="/userCheck.png" alt="notification" />
               Verification
             </li>
           </NavLink>
