@@ -10,7 +10,7 @@ const Setting = () => {
           Business Settings
         </h2>
 
-        <ul className="flex items-center justify-between md:p-14 p-5 gap-5 overflow-auto scrollbar whitespace-nowrap lg:p-14 text-[16px] text-center ">
+        <ul className="flex items-center justify-between md:p-14 p-5 gap-5 overflow-auto scrollbar-hidden whitespace-nowrap lg:p-14 text-[16px] text-center ">
           <li className="bg-[#0C46D3] w-[183px] p-3 rounded-lg text-white ">
             Company Overview
           </li>

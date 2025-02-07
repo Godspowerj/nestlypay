@@ -36,7 +36,7 @@ const TableComponent = () => {
     Cancelled: "bg-[#FF00001A] text-[#FF0000] ",
   };
   return (
-    <div className="w-full overflow-x-auto ">
+    <div className="w-full overflow-x-auto scrollbar-hidden">
       <table className=" w-full">
         <thead className="text-left">
           <tr className="">
