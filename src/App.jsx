@@ -23,6 +23,9 @@ import Profile from "./Dashboard.jsx/DashboardPages/Profile";
 import Setting from "./Dashboard.jsx/DashboardPages/ProfileSetting/Setting";
 import CompanyOverview from "./Dashboard.jsx/DashboardPages/ProfileSetting/CompanyOverview";
 import { Onelaststep } from "./Components/AuthbusinessAccount/Onelaststep";
+import SettingAccount from "./Dashboard.jsx/DashboardPages/ProfileSetting/SettingAccount";
+import SettingSecurity from "./Dashboard.jsx/DashboardPages/ProfileSetting/SettingSecurity";
+import SettingPreference from "./Dashboard.jsx/DashboardPages/ProfileSetting/SettingPreference";
 
 export default function App() {
   return (
@@ -50,7 +53,14 @@ export default function App() {
           <Route path="catalog" element={<Catalog />} />
           <Route path="product" element={<Product />} />
           <Route path="userprofile" element ={<Profile/>}/>
-          <Route path="setting" element={<Setting/>}></Route>
+
+          <Route path="setting" element={<Setting/>}>
+            <Route index element={<CompanyOverview/>}/>
+            <Route path="settingaccount" element={<SettingAccount/>}/>
+            <Route path="settingsecurity" element={<SettingSecurity/>}/>
+            <Route path="settingpreference" element={<SettingPreference/>}/>
+          </Route>
+
           <Route path="overview" element={<CompanyOverview/>}/>
         </Route>
         <Route path="*" element={<NotFound />} />
