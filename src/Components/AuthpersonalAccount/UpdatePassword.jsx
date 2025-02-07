@@ -3,7 +3,7 @@ import { SidebarAuth } from "../SIdebarAuth";
 export const UpdatePassword = () => {
   return (
     <>
-      <div className="w-full flex h-full">
+      <div className="w-full flex h-full md:px-24">
         <div className="w-full hidden lg:block ">
           <SidebarAuth />
         </div>

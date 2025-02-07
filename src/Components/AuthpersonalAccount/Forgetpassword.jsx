@@ -19,8 +19,8 @@ export const Forgetpassword = () => {
 
   return (
     <>
-      <div className="flex w-full">
-        <div className="lg:w-full">
+      <div className="flex w-full md:px-24">
+        <div className="lg:w-full md:hidden lg:block ">
           <SidebarAuth />
         </div>
         

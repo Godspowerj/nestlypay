@@ -8,8 +8,8 @@ const Sidebar = ({ togglesidebar ,handlesidebarclosing }) => {
   return (
     <>
         <div
-          className={`fixed md:sticky w-full md:w-[500px] md:top-0 md:hidden lg:block left-0 h-screen bg-white z-50  overflow-auto scrollbar-hidden shadow-lg pt-10 transition-transform duration-100 ${
-          togglesidebar ? "translate-y-0 " : "translate-y-[1000px] md:translate-y-0"
+          className={`fixed lg:sticky w-full lg:w-[500px] lg:top-0 md: lg:block left-0 h-screen bg-white z-50  overflow-auto scrollbar-hidden shadow-lg pt-10 transition-transform duration-100 ${
+          togglesidebar ? "translate-y-0 " : "translate-y-[1000px] md:translate-y-[81.25rem] lg:translate-y-0"
         }`}>
           <nav onClick={handlesidebarclosing} className="mb-28" >
             <ul className="flex flex-col md:space-y-4 space-y-5">
