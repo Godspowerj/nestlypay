@@ -16,13 +16,13 @@ export const MasterAuth = () => {
       {" "}
       {/* the top */}
       <div className="flex w-full h-full md:px-24 lg:px-0 lg:flex justify-center">
-        <div className="md:hidden">
+        <div className="md:hidden lg:block">
           <SidebarAuth />
         </div>
         
         
         <div className="lg:px-16 bg-white/100 flex flex-col place-content-center overflow-hidden h-[calc(100vh-6.5rem)] px-5 sm:h-[calc(100vh-3rem)] lg:h-screen">
-          <h2 className="text-[#0C46D3] text-2xl lg:hidden absolute top-0 pt-7">
+          <h2 className="text-[#0C46D3] text-2xl lg:hidden block absolute top-0 pt-7">
             NESTLY PAY
           </h2>
           <div className="w-full  ">
