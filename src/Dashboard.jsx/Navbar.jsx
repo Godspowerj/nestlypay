@@ -49,7 +49,7 @@ const Navbar = ({ togglesidebar, Settogglesidebar }) => {
           </div>
         </div>
 
-        <div className="flex items-center gap-4 ">
+        <div className="flex items-center md:gap-6 lg:gap-6 gap-4 ">
           <p className="text-[#E1981B] hidden lg:block md:hidden bg-[#E1981B1A] text-sm p-1 rounded-lg">
             Request pending
           </p>
@@ -68,7 +68,7 @@ const Navbar = ({ togglesidebar, Settogglesidebar }) => {
       </div>
 
       <div
-        className={`absolute right-12 -top-56 bg-[#FFFFFF] drop-shadow-lg  rounded-lg transition-all duration-100 ${
+        className={`absolute right-12 -top-56 bg-[#FFFFFF] drop-shadow-lg  rounded-lg transition-all duration-400 ${
           usernotification ? "translate-y-0" : "translate-y-[300px]"
         }`}
       >
@@ -98,7 +98,7 @@ const Navbar = ({ togglesidebar, Settogglesidebar }) => {
 
       {/* notification bell pop */}
       <div
-        className={`absolute  flex md:right-12 right-1 -top-56 bg-[#FFFFFF] drop-shadow-lg px-6 py-5 rounded-lg transition-all duration-300 ${
+        className={`absolute  flex md:right-12 right-1 -top-56 bg-[#FFFFFF] drop-shadow-lg px-6 py-5 rounded-lg transition-all duration-400 ${
           notification ? "translate-y-0" : "translate-y-[300px]"
         }`}
       >
