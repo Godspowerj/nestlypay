@@ -49,7 +49,7 @@ const Navbar = ({ togglesidebar, Settogglesidebar }) => {
           </div>
         </div>
 
-        <div className="flex items-center gap-6 ">
+        <div className="flex items-center gap-4 ">
           <p className="text-[#E1981B] hidden lg:block md:hidden bg-[#E1981B1A] text-sm p-1 rounded-lg">
             Request pending
           </p>
