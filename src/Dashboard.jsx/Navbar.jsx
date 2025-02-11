@@ -9,7 +9,7 @@ const Navbar = ({ togglesidebar, Settogglesidebar }) => {
     return isActive ? "border-l-8 border-[#0C46D3] bg-[#E7EDFB]" : " ";
   };
   return (
-    <div className="bg-white sticky top-0 z-50 px-5 ">
+    <div className="bg-white sticky top-0 z-50 px-4 ">
       <div className="flex justify-between items-center md:p-4  pt-3 pb-3">
         <img
           onClick={() =>Settogglesidebar(!togglesidebar)}
@@ -68,7 +68,7 @@ const Navbar = ({ togglesidebar, Settogglesidebar }) => {
       </div>
 
       <div
-        className={`absolute right-12 -top-56 bg-[#FFFFFF] drop-shadow-lg  rounded-lg transition-all duration-400 ${
+        className={`absolute right-12 -top-56 bg-[#FFFFFF] drop-shadow-lg  rounded-lg transition-all duration-500 ${
           usernotification ? "translate-y-0" : "translate-y-[300px]"
         }`}
       >
@@ -98,7 +98,7 @@ const Navbar = ({ togglesidebar, Settogglesidebar }) => {
 
       {/* notification bell pop */}
       <div
-        className={`absolute  flex md:right-12 right-1 -top-56 bg-[#FFFFFF] drop-shadow-lg px-6 py-5 rounded-lg transition-all duration-400 ${
+        className={`absolute  flex md:right-12 right-1 -top-56 bg-[#FFFFFF] drop-shadow-lg px-6 py-5 rounded-lg transition-all duration-500 ${
           notification ? "translate-y-0" : "translate-y-[300px]"
         }`}
       >
