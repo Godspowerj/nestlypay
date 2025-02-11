@@ -3,7 +3,7 @@ import { assets } from "../../../assets/img";
 const CompanyOverview = () => {
   return (
     <>
-      <div className="md:flex lg:flex pb-20 block justify-center  space-y-6 gap-10 ">
+      <div className="md:flex lg:flex pb-20 block  space-y-6 gap-10 ">
         {/* buisness Information */}
         <div className="space-y-3 md:w-[400px] lg:w-[400px] bg-white p-5 rounded-lg shadow-lg">
           <h2 className="text-2xl">Business Information</h2>

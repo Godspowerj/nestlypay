@@ -3,10 +3,10 @@ import React from "react";
 const SettingAccount = () => {
   return (
     <>
-      <div className="mb-8 ">
+      <div className="">
         <div className="md:w-[400px] lg:w-[400px] bg-white p-4 rounded-lg shadow-md">
-          <h2>Banking Info</h2>
-          <p>
+          <h2 className="text-2xl">Banking Info</h2>
+          <p className="text-sm text-[#000000B2]">
             The name on your bank account should be the same as the one you
             filled in to ensure easy validation.
           </p>

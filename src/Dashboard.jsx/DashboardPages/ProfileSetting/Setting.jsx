@@ -34,7 +34,11 @@ const Setting = () => {
             </li>
           </NavLink>
         </ul>
-        <Outlet />
+
+        <div className="mb-20">
+          <Outlet />
+        </div>
+        
       </div>
     </>
   );
