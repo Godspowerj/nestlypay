@@ -11,7 +11,7 @@ const Model = () => {
           alt=""
         />
         <h1 className="text-2xl">Oops! You don’t have any custom model yet.</h1>
-        <p className="text-sm ">Create one here.</p>
+        <p className="text-sm text-[#0C46D3]">Create one here.</p>
       </div>
     </div>
   );

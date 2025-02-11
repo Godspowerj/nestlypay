@@ -9,7 +9,7 @@ const Navbar = ({ togglesidebar, Settogglesidebar }) => {
     return isActive ? "border-l-8 border-[#0C46D3] bg-[#E7EDFB]" : " ";
   };
   return (
-    <div className="bg-white sticky top-0 z-50 px-4 ">
+    <div className="bg-white sticky top-0 z-50 px-3 ">
       <div className="flex justify-between items-center md:p-4  pt-3 pb-3">
         <img
           onClick={() =>Settogglesidebar(!togglesidebar)}
@@ -72,9 +72,9 @@ const Navbar = ({ togglesidebar, Settogglesidebar }) => {
           usernotification ? "translate-y-0" : "translate-y-[300px]"
         }`}
       >
-        <ul className="space-y-3 text-left w-[200px] py-3 flex flex-col ">
-          <NavLink to="userprofile" className={navigationlink}>
-            <li className="flex items-center ml-4 p-2 gap-4">
+        <ul onClick={()=> Setusernotification(true)} className="space-y-3 text-left w-[200px] py-3 flex flex-col ">
+          <NavLink to="userprofile"  className={navigationlink}>
+            <li  className="flex items-center ml-4 p-2 gap-4">
               <img src="/userCircle.png" alt="profile" />
               Profile
             </li>
