@@ -68,7 +68,7 @@ const Navbar = ({ togglesidebar, Settogglesidebar }) => {
       </div>
 
       <div
-        className={`absolute right-12 -top-56 bg-[#FFFFFF] drop-shadow-lg  rounded-lg transition-all duration-400 ${
+        className={`absolute right-12 -top-56 bg-[#FFFFFF] drop-shadow-lg  rounded-lg transition-all duration-500 ${
           usernotification ? "translate-y-0" : "translate-y-[300px]"
         }`}
       >
@@ -98,7 +98,7 @@ const Navbar = ({ togglesidebar, Settogglesidebar }) => {
 
       {/* notification bell pop */}
       <div
-        className={`absolute  flex md:right-12 right-1 -top-56 bg-[#FFFFFF] drop-shadow-lg px-6 py-5 rounded-lg transition-all duration-400 ${
+        className={`absolute  flex md:right-12 right-1 -top-56 bg-[#FFFFFF] drop-shadow-lg px-6 py-5 rounded-lg transition-all duration-500 ${
           notification ? "translate-y-0" : "translate-y-[300px]"
         }`}
       >
