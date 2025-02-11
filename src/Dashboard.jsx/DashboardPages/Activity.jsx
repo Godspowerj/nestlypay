@@ -14,12 +14,12 @@ const Activity = () => {
       },
   ];
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 whitespace-nowrap ">
       <h1 className="font-medium text-2xl"> My Activities </h1>
       <div>
-        <div className="space-y-4">
+        <div className="space-y-4 overflow-auto scrollbar-hidden">
           {activities.map((Activity, index) => (
-            <div key={index} className="flex items-center justify-between">
+            <div key={index} className="flex items-center space-x-6  overflow-auto scrollbar-hidden justify-between">
               <div className="flex gap-4 items-center">
                 <p className="bg-green-800 flex items-center text-center justify-center aspect-auto size-10 rounded-full text-white">
                 {Activity.header.charAt(0).toUpperCase()}
