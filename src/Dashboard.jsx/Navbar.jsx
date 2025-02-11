@@ -60,7 +60,7 @@ const Navbar = ({ togglesidebar, Settogglesidebar }) => {
           />
           <img
             onClick={() => Setusernotification(!usernotification)}
-            className="size-14 rounded-full"
+            className="lg:size-14 md:size-14 size-12 rounded-full"
             src="/profile.jpg"
             alt=""
           />
