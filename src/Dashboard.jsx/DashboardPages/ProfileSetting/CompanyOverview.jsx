@@ -12,17 +12,17 @@ const CompanyOverview = () => {
           </p>
           <form action="" className="space-y-3">
             <input
-              className="border-[ 1.2px] border-[#979797] w-full px-4 py-4 rounded-lg text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              className="border-[1.2px] bg-[#F1F1F1] w-full px-4 py-4 rounded-lg text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
               type="text"
               placeholder="Company Name"
             />
             <input
-              className="border-[ 1.2px] border-[#979797] w-full px-4 py-4 rounded-lg text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+             className="border-[1.2px] bg-[#F1F1F1] w-full px-4 py-4 rounded-lg text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
               type="text"
               placeholder="Company Email"
             />
             <input
-              className="border-[ 1.2px] border-[#979797] w-full px-4 py-4 rounded-lg text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+             className="border-[1.2px] bg-[#F1F1F1] w-full px-4 py-4 rounded-lg text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
               type="text"
               placeholder="Website (Optional)"
             />
@@ -51,35 +51,34 @@ const CompanyOverview = () => {
           </div>
           <form action="" className="space-y-2">
             <input
-              className="border-[ 1.2px] border-[#979797] w-full px-4 py-4 rounded-lg text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-              type="text"
+              className="border-[1.2px] bg-[#F1F1F1] w-full px-4 py-4 rounded-lg text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
               placeholder="Address One"
             />
             <input
-              className="border-[ 1.2px] border-[#979797] w-full px-4 py-4 rounded-lg text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              className="border-[1.2px] bg-[#F1F1F1] w-full px-4 py-4 rounded-lg text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
               type="text"
               placeholder="Address Two"
             />
             <div className="flex">
               <input
-                className="border-[ 1.2px] border-[#979797] w-full px-4 py-4 rounded-lg text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                className="border-[1.2px] bg-[#F1F1F1] w-full px-4 py-4 rounded-lg text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                 type="text"
                 placeholder="Address One"
               />
               <input
-                className="border-[ 1.2px] border-[#979797] w-full px-4 py-4 rounded-lg text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                className="border-[1.2px] bg-[#F1F1F1] w-full px-4 py-4 rounded-lg text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                 type="text"
                 placeholder="Address Two"
               />
             </div>
             <div className="flex">
               <input
-                className="border-[ 1.2px] border-[#979797] w-full px-4 py-4 rounded-lg text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                className="border-[1.2px] bg-[#F1F1F1] w-full px-4 py-4 rounded-lg text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                 type="text"
                 placeholder="Address One"
               />
               <input
-                className="border-[ 1.2px] border-[#979797] w-full px-4 py-4 rounded-lg text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+               className="border-[1.2px] bg-[#F1F1F1] w-full px-4 py-4 rounded-lg text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                 type="text"
                 placeholder="Address Two"
               />
