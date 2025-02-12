@@ -26,6 +26,7 @@ import { Onelaststep } from "./Components/AuthbusinessAccount/Onelaststep";
 import SettingAccount from "./Dashboard.jsx/DashboardPages/ProfileSetting/SettingAccount";
 import SettingSecurity from "./Dashboard.jsx/DashboardPages/ProfileSetting/SettingSecurity";
 import SettingPreference from "./Dashboard.jsx/DashboardPages/ProfileSetting/SettingPreference";
+import UserPersonalDashboard from "./Personaldashboard/UserPersonalDashboard";
 
 export default function App() {
   return (
@@ -41,27 +42,30 @@ export default function App() {
         <Route path="updatepassword" element={<UpdatePassword />} />
         <Route path="personalsignup" element={<PersonalInfo />} />
         <Route path="businessinfo" element={<Businessinfo />} />
-        <Route path="laststep" element={<Onelaststep/>} />
+        <Route path="laststep" element={<Onelaststep />} />
 
         <Route path="userdashboard" element={<UserDashboardLayout />}>
           <Route index element={<Home />} />
-          <Route path="model" element={<Model />} />
-          <Route path="activity" element={<Activity />} />
-          <Route path="invoice" element={<Invoicehistory />} />
-          <Route path="clients" element={<Clients />} />
+          
           <Route path="submerchant" element={<SubMerchant />} />
           <Route path="catalog" element={<Catalog />} />
           <Route path="product" element={<Product />} />
-          <Route path="userprofile" element ={<Profile/>}/>
-
-          <Route path="setting" element={<Setting/>}>
-            <Route index element={<CompanyOverview/>}/>
-            <Route path="settingaccount" element={<SettingAccount/>}/>
-            <Route path="settingsecurity" element={<SettingSecurity/>}/>
-            <Route path="settingpreference" element={<SettingPreference/>}/>
+          <Route path="userprofile" element={<Profile />} />
+          <Route path="setting" element={<Setting />}>
+            <Route index element={<CompanyOverview />} />
+            <Route path="settingaccount" element={<SettingAccount />} />
+            <Route path="settingsecurity" element={<SettingSecurity />} />
+            <Route path="settingpreference" element={<SettingPreference />} />
           </Route>
-
-          <Route path="overview" element={<CompanyOverview/>}/>
+          <Route path="overview" element={<CompanyOverview />} />
+        </Route>
+        
+        <Route path="userpersonal" element={<UserPersonalDashboard/>}> 
+          <Route index element={<Home />} />
+          <Route path="activity" element={<Activity />} />
+          <Route path="invoice" element={<Invoicehistory />} />
+          <Route path="model" element={<Model />} />
+          <Route path="clients" element={<Clients />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
