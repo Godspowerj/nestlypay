@@ -9,7 +9,8 @@ export const Signin = () => {
   };  
   const personalsignin = () => {
     navigate("/personalsignup");
-  };  
+  };
+ 
   return (
     <>
       <div className="w-full flex md:px-24 lg:px-0"> 
@@ -46,8 +47,8 @@ export const Signin = () => {
                 placeholder="Password"
                 required
               />
-              <div className="flex w-full text-center text-[14px] justify-center text-white bg-[#0C46D3]  px-4 py-4 rounded-lg hover:bg-blue-600">
-                <button type="submit">Sign In</button>
+              <div  className="flex w-full text-center text-[14px] justify-center text-white bg-[#0C46D3]  px-4 py-4 rounded-lg hover:bg-blue-600">
+                <button className="w-full h-full" type="submit">Sign In</button>
               </div>
 
               <div className="text-center  text-[16px] space-y-4">

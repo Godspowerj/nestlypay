@@ -26,8 +26,8 @@ const Navbar = ({ togglesidebar, Settogglesidebar }) => {
               className="w-[50px] hidden lg:block"
             />
             <div className="ml-2 hidden lg:block">
-              <h2 className="text-[18px] leading-8 font-normal">Hype Agency</h2>
-              <p className="text-sm text-gray-500">Growth and Marketing</p>
+              <h2 className="text-[18px] leading-8 font-normal">Jonah Godspower</h2>
+              <p className="text-sm text-gray-500">godspjona27@gmail.com</p>
             </div>
           </div>
 

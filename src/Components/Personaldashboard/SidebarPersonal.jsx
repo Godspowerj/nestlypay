@@ -55,9 +55,7 @@ const Sidebar = ({ togglesidebar ,handlesidebarclosing }) => {
                   <img src="/sub merchant.png" />
                   Payouts
                 </li>
-              </NavLink>
-              
-              
+              </NavLink> 
             </ul>
           </nav>
         </div>

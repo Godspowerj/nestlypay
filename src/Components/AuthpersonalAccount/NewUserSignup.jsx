@@ -1,6 +1,10 @@
 import { SidebarAuth } from "../SIdebarAuth";
-
+import { useNavigate } from "react-router-dom";
 export const NewUserSignUp = () => {
+  const navigate = useNavigate();
+  const toUserPersonalDashboard = () => {
+    navigate("/userpersonaldashboard");
+  }
   return (
     <>
       <div className="w-full flex ">
@@ -46,7 +50,7 @@ export const NewUserSignUp = () => {
               />
             </form>{" "}
             <div className="flex text-center justify-center text-white bg-[#0C46D3] text-[14px] px-4 py-4 rounded-lg hover:bg-blue-600">
-              <button type="submit">Create Now</button>
+              <button type="submit" onClick={toUserPersonalDashboard}>Create Now</button>
             </div>
           </div>
         </div>

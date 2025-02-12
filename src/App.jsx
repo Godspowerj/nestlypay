@@ -26,7 +26,7 @@ import { Onelaststep } from "./Components/AuthbusinessAccount/Onelaststep";
 import SettingAccount from "./Dashboard.jsx/DashboardPages/ProfileSetting/SettingAccount";
 import SettingSecurity from "./Dashboard.jsx/DashboardPages/ProfileSetting/SettingSecurity";
 import SettingPreference from "./Dashboard.jsx/DashboardPages/ProfileSetting/SettingPreference";
-import UserPersonalDashboard from "./Personaldashboard/UserPersonalDashboard";
+import UserPersonalDashboard from "./Components/Personaldashboard/UserPersonalDashboard";
 
 export default function App() {
   return (
@@ -60,7 +60,7 @@ export default function App() {
           <Route path="overview" element={<CompanyOverview />} />
         </Route>
         
-        <Route path="userpersonal" element={<UserPersonalDashboard/>}> 
+        <Route path="userpersonaldashboard" element={<UserPersonalDashboard/>}> 
           <Route index element={<Home />} />
           <Route path="activity" element={<Activity />} />
           <Route path="invoice" element={<Invoicehistory />} />

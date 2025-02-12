@@ -9,8 +9,8 @@ const Home = () => {
       <div className="flex flex-col space-y-9 pb-20">
         <div className="md:flex block justify-between ">
           <div>
-            <h1 className="text-2xl w-80 md:w-full ">
-              Welcome to NestlyPay, Dominic 🎊
+            <h1 className="text-2xl w-80 lg:w-full md:w-full flex-wrap ">
+              Welcome to NestlyPay, Godspower 🎊
             </h1>
             <p className="text-sm">Here is your business overview</p>
           </div>

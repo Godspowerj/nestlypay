@@ -7,6 +7,9 @@ export const PersonalInfo = () => {
   const tobuisness = () => {
     navigate("/businessinfo");
   };
+  const toUserPersonalDashboard = () => {
+    navigate("/userpersonaldashboard");
+  };   
   return (
     <>
       <div className="flex w-full md:px-24 lg:px-0">
