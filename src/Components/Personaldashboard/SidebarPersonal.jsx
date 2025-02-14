@@ -38,7 +38,7 @@ const Sidebar = ({ togglesidebar ,handlesidebarclosing }) => {
               <p className="font-medium text-black/50 text-xs/6 pl-10">
                 TRANSACTION
               </p>
-              <NavLink to="*" className={navigationlink}>
+              <NavLink to="invoicepersonal" className={navigationlink}>
                 <li className="flex items-center gap-4 text-[16px] text-[#494949] md:px-10 py-3 md:-ml-1 ml-7">
                   <img src="/invoice.png" />
                   Invoice History
