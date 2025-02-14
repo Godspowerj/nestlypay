@@ -14,7 +14,7 @@ const AddClients = ({
     useContext(MyContext);
   return (
     <>
-      <div className="fixed inset-0 top-0 left-0 w-full h-full flex items-center justify-center bg-black/50 backdrop-blur-sm z-[1000]">
+      <div className="fixed inset-0 top-0 left-0 w-full h-full flex items-center justify-center bg-black/20 backdrop-blur-sm z-[1000]">
         <div className="flex flex-col bg-white w-[350px] md:w-[400px] space-y-7 rounded-xl p-6 md:p-6">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl">{title}</h2>

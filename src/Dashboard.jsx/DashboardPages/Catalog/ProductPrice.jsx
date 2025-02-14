@@ -6,7 +6,7 @@ import { useContext } from "react";
 const ProductPrice = () => {
     const {handleisProductclose} = useContext(MyContext)
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm z-[1000]">
+    <div className="fixed inset-0 flex items-center justify-center bg-black/20 backdrop-blur-sm z-[1000]">
       <div className="w-[340px] md:w-96 bg-white p-6 space-y-7 rounded-lg">
         <div className="">
           <h2 className="text-2xl font-medium">Pricing Information</h2>
