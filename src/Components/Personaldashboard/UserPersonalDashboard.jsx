@@ -24,7 +24,7 @@ const UserPersonalDashboard = () => {
           Settogglesidebar={Settogglesidebar}
           handlesidebarclosing={handlesidebarclosing}
         />
-        <div className="w-full md:px-8 px-4 py-10 h-screen bg-[#fafafa9a] overflow-y-scroll">
+        <div className="w-full md:px-8 px-4 py-10 h-screen bg-[#fafafa9a] overflow-y-auto scrollbar-hidden">
           <Outlet />
         </div>
       </div>
