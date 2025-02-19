@@ -8,6 +8,8 @@ export const MyProvider = ({ children }) => {
   const [handleDeleteCancel, SethandleDeleteCancel] = useState(false);
   const [handEditClient, SethandEditClient] = useState(false);
   const [addclients, Setaddclients] = useState(false);
+  const [cancelPayment, SetcancelPayment] = useState(false)
+  const [successPayment, SetsuccessPayment] = useState(false)
 
   // state to handle the catalog
    const [isAddProduct, SetisAddProduct] = useState(false);
@@ -68,7 +70,11 @@ export const MyProvider = ({ children }) => {
     isAddProduct,
     isProduct,
     handleisProduct,
-    handleisProductclose
+    handleisProductclose,
+    cancelPayment,
+    SetcancelPayment,
+    successPayment,
+    SetsuccessPayment
   };
 
   return (

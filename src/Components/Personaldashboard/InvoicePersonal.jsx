@@ -1,17 +1,21 @@
 import React from "react";
 import CancelPayment from "./CancelPayment";
+import { useContext } from "react";
+import { MyContext } from "../../ContextFolder/ContextApi";
+import SuccessPayment from "./SuccessPayment";
 
 const InvoicePersonal = () => {
+  const {cancelPayment,SetcancelPayment,successPayment,SetsuccessPayment} = useContext(MyContext)
   const invoiceData = [
     {
       invoiceId: "NES989238093",
       dueDate: "07/07/2022",
       issueDate: "07/07/2022",
       amount: "₦39,000.00",
-      status: [
-        { src: "/success.png", alt: "Success" },
-        { src: "/failed.png", alt: "Failed" },
-      ],
+      // status: [
+      //   { src: "/success.png", alt: "Success" },
+      //   { src: "/failed.png", alt: "Failed" },
+      // ],
     },
   ];
 
@@ -81,21 +85,17 @@ const InvoicePersonal = () => {
                   {invoice.amount}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 flex align-center gap-2">
-                  {invoice.status.map((status, idx) => (
-                    <img
-                      key={idx}
-                      className="w-[50px]"
-                      src={status.src}
-                      alt={status.alt}
-                    />
-                  ))}
+                  <img onClick={()=>SetsuccessPayment(true)} src="/success.png" alt="Success" className="w-[40px]" />
+                  <img onClick={()=>SetcancelPayment(true)} src="/failed.png" alt="" className="w-[40px]"/>
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
-      <CancelPayment />
+      {cancelPayment && <CancelPayment />}
+      {successPayment && <SuccessPayment/>}
+      
     </div>
   );
 };
