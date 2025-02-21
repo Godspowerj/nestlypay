@@ -10,6 +10,8 @@ export const MyProvider = ({ children }) => {
   const [addclients, Setaddclients] = useState(false);
   const [cancelPayment, SetcancelPayment] = useState(false)
   const [successPayment, SetsuccessPayment] = useState(false)
+  const [email, Setemail] = useState("")
+  const [Password, SetPassword] = useState("")
 
   // state to handle the catalog
    const [isAddProduct, SetisAddProduct] = useState(false);
@@ -74,7 +76,11 @@ export const MyProvider = ({ children }) => {
     cancelPayment,
     SetcancelPayment,
     successPayment,
-    SetsuccessPayment
+    SetsuccessPayment,
+    email,
+    Setemail,
+    Password,
+    SetPassword
   };
 
   return (
