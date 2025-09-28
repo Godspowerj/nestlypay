@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { SidebarAuth } from "../SIdebarAuth";
 import { useNavigate } from "react-router-dom";
 import { MyContext } from "../../ContextFolder/ContextApi";
-import { showToast} from "../ShowToast";
 
 export const Signin = () => {
   const { email, Setemail, Password, SetPassword } = useContext(MyContext);
@@ -56,7 +55,6 @@ export const Signin = () => {
                 onChange={(e) => SetPassword(e.target.value)}
               />
               <div
-                onClick={notify}
                 className="flex w-full text-center text-[14px] justify-center text-white bg-[#0C46D3] px-4 py-4 rounded-lg hover:bg-blue-600"
               >
                 <button className="w-full h-full" type="button">
