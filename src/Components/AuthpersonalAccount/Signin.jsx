@@ -15,17 +15,6 @@ export const Signin = () => {
     navigate("/personalsignup");
   };
 
-  const notify = () => {
-   
-    if (email === "" || Password === "") {
-
-      return showToast({ message: "Please fill in all fields", type: "error" });
-    } else {
-      showToast({ message: "Login Successful!", type: "success" });
-      setTimeout(() => navigate(""), 2000);
-    }
-  };
-
   return (
     <>
       <div className="w-full flex md:px-24 lg:px-0">
